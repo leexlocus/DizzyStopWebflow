@@ -13996,7 +13996,7 @@ const isOffline = computed(() => {
     return true;
   return !!(!(fetchedScanMeta == null ? void 0 : fetchedScanMeta.data) && lastScanMeta.value);
 });
-const rescanRoute = (route) => useFetch(`/reports/${route.id}/rescan`).post();
+const rescanRoute = (route) => useFetch(`./reports/${route.id}/rescan`).post();
 const scanMeta = computed(() => {
   var _a2;
   if (isStatic)
@@ -14022,7 +14022,7 @@ async function wsConnect() {
     const { response } = JSON.parse(message.data);
     wsReports.set(response.route.path, response);
   };
-  const reports = await useFetch("/reports").get().json();
+  const reports = await useFetch("./reports").get().json();
   (_a2 = reports.data.value) == null ? void 0 : _a2.forEach((report) => {
     wsReports.set(report.route.path, report);
   });
@@ -14067,7 +14067,7 @@ function formatBytes(bytes, decimals = 2) {
 }
 const rescanSiteRequest = ref(null);
 function rescanSite(done) {
-  const fetch2 = useFetch("/reports/rescan").post();
+  const fetch2 = useFetch("./reports/rescan").post();
   rescanSiteRequest.value = fetch2;
   fetch2.onFetchResponse(() => {
     done();

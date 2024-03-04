@@ -11010,14 +11010,14 @@ const _sfc_main$t = defineComponent({
             default: withCtx(() => [
               unref(device) === "mobile" ? (openBlock(), createElementBlock("img", {
                 key: 0,
-                src: `${_ctx.report.artifactUrl}/screenshot.jpeg`,
+                src: `./${_ctx.report.artifactUrl}/screenshot.jpeg`,
                 loading: "lazy",
                 height: "112",
                 width: "68",
                 class: "w-68px h-112px"
               }, null, 8, _hoisted_2$x)) : (openBlock(), createElementBlock("img", {
                 key: 1,
-                src: `${_ctx.report.artifactUrl}/screenshot.jpeg`,
+                src: `./${_ctx.report.artifactUrl}/screenshot.jpeg`,
                 loading: "lazy",
                 height: "82",
                 width: "112",
@@ -11066,7 +11066,7 @@ const _sfc_main$t = defineComponent({
           to: "#modal-portal"
         }, [
           createBaseVNode("img", {
-            src: `${_ctx.report.artifactUrl}/full-screenshot.jpeg`,
+            src: `.${_ctx.report.artifactUrl}/full-screenshot.jpeg`,
             alt: "full screenshot",
             class: "mx-auto"
           }, null, 8, _hoisted_11$3)
@@ -54679,7 +54679,7 @@ const _sfc_main$6 = defineComponent({
                 createVNode(unref(PointLight), { position: { x: 160, y: -71, z: 0 } }),
                 createVNode(unref(AmbientLight)),
                 createVNode(unref(FBX), {
-                  src: `${unref(basePath)}assets/lighthouse.fbx`,
+                  src: `.${unref(basePath)}assets/lighthouse.fbx`,
                   onLoad: onReady
                 }, null, 8, ["src"])
               ]),
@@ -55701,13 +55701,13 @@ const _sfc_main$1 = defineComponent({
       return openBlock(), createElementBlock("nav", _hoisted_1$1, [
         createBaseVNode("a", _hoisted_2$1, [
           createBaseVNode("img", {
-            src: `${unref(basePath)}assets/logo-light.svg`,
+            src: `.${unref(basePath)}assets/logo-light.svg`,
             height: "24",
             width: "24",
             class: "w-24px h-24px mr-2 hidden dark:block"
           }, null, 8, _hoisted_3$1),
           createBaseVNode("img", {
-            src: `${unref(basePath)}assets/logo-dark.svg`,
+            src: `.${unref(basePath)}assets/logo-dark.svg`,
             height: "24",
             width: "24",
             class: "w-24px h-24px mr-2 block dark:hidden"

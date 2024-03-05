@@ -11066,7 +11066,7 @@ const _sfc_main$t = defineComponent({
           to: "#modal-portal"
         }, [
           createBaseVNode("img", {
-            src: `.${_ctx.report.artifactUrl}/full-screenshot.jpeg`,
+            src: `${_ctx.report.artifactUrl}/full-screenshot.jpeg`,
             alt: "full screenshot",
             class: "mx-auto"
           }, null, 8, _hoisted_11$3)
@@ -12319,7 +12319,7 @@ const _sfc_main$f = defineComponent({
           height: img.naturalHeight
         };
       };
-      img.src = `.${props2.report.artifactUrl}/full-screenshot.jpeg`;
+      img.src = `${props2.report.artifactUrl}/full-screenshot.jpeg`;
     });
     const styles = computed(() => {
       if (!screenshot.value)
@@ -12346,7 +12346,7 @@ const _sfc_main$f = defineComponent({
         backgroundPositionY: `${-(positions.screenshot.top * zoomFactor)}px`,
         backgroundPositionX: `${-(positions.screenshot.left * zoomFactor)}px`,
         backgroundSize: `${screenshot.value.width * zoomFactor}px ${screenshot.value.height * zoomFactor}px`,
-        backgroundImage: `url('.${props2.report.artifactUrl}/full-screenshot.jpeg')`
+        backgroundImage: `url('${props2.report.artifactUrl}/full-screenshot.jpeg')`
       };
       const marker = {
         width: `${elementRectSC.width * zoomFactor}px`,
